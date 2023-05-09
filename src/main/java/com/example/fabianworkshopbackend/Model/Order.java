@@ -13,17 +13,17 @@ public class Order {
         public String name;
     public String email;
     public String woodType;
+    public String LeatherType;
+    public String Inlay;
     public String priceEstimate;
-    public String metalType;
-    public String engravingText;
 
-    public Order(String name, String email, String woodType, String priceEstimate, String metalType, String engravingText) {
+    public Order(String name, String email, String woodType, String LeatherType, String Inlay, String priceEstimate) {
         this.name = name;
         this.email = email;
         this.woodType = woodType;
+        this.LeatherType = LeatherType;
+        this.Inlay = Inlay;
         this.priceEstimate = priceEstimate;
-        this.metalType = metalType;
-        this.engravingText = engravingText;
     }
 
     public Order() {
@@ -53,6 +53,23 @@ public class Order {
         this.woodType = woodType;
     }
 
+
+    public String getLeatherType() {
+        return LeatherType;
+    }
+
+    public void setLeatherType(String metalType) {
+        this.LeatherType = metalType;
+    }
+
+    public String getInlay() {
+        return Inlay;
+    }
+
+    public void setInlay(String engravingText) {
+        this.Inlay = engravingText;
+    }
+
     public String getPriceEstimate() {
         return priceEstimate;
     }
@@ -61,20 +78,5 @@ public class Order {
         this.priceEstimate = priceEstimate;
     }
 
-    public String getMetalType() {
-        return metalType;
-    }
-
-    public void setMetalType(String metalType) {
-        this.metalType = metalType;
-    }
-
-    public String getEngravingText() {
-        return engravingText;
-    }
-
-    public void setEngravingText(String engravingText) {
-        this.engravingText = engravingText;
-    }
 }
 

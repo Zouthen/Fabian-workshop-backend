@@ -4,6 +4,7 @@ import com.example.fabianworkshopbackend.Model.Order;
 import com.example.fabianworkshopbackend.Service.EmailService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.http.HttpClient;
@@ -13,6 +14,7 @@ import java.net.http.HttpClient;
 public class EmailController {
     EmailService emailService = new EmailService();
 
+    /*
     @PostMapping("/emailreply")
     public String autoReply(
             @RequestParam ("name") String name,
@@ -36,8 +38,13 @@ public class EmailController {
 
     @GetMapping("/confirmationPage")
     public void confirmationPage(){
+    }
+     */
 
-
+    @PostMapping("/emailreply")
+    @ResponseStatus(HttpStatus.OK)
+    public ResponseEntity<String> postOrder(@RequestBody Order order) throws Exception {
+        return emailService.autoreplyService("Email text response", order);
     }
 
 }
