@@ -17,7 +17,8 @@ public class GalleryController
     public ResponseEntity<String> getImages () throws JsonProcessingException
     {
         var reponse    = new GalleryImages();
-        var folder     = new File("C:/Users/SnowPiercer/Documents/GitHub/Fabian-workshop/HTML/Gallery");
+        //var folder     = new File("C:/Users/SnowPiercer/Documents/GitHub/Fabian-workshop/HTML/Gallery");
+        var folder     = new File("G:/Andre computere/Min PC/KEA/3. Semester/Projects/Fabian workshop/Fabian-workshop/HTML/Gallery");
         var serializer = new ObjectMapper().writer().withDefaultPrettyPrinter();
 
         for (var img : folder.listFiles())
