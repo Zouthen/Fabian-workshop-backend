@@ -20,11 +20,11 @@ public class GalleryController
         // Hino
         //var folder     = new File("C:/Users/SnowPiercer/Documents/GitHub/Fabian-workshop/HTML/Gallery");
         // Batman hjemme
-        //var folder     = new File("G:/Andre computere/Min PC/KEA/3. Semester/Projects/Fabian workshop/Fabian-workshop/HTML/Gallery");
+        var folder     = new File("G:/Andre computere/Min PC/KEA/3. Semester/Projects/Fabian workshop/Fabian-workshop/HTML/Gallery");
         // Batman remote
-        //var folder     = new File("C:/Users/micha/Desktop/KEA/3. Semester/Projects/Fabian workshop/Fabian-workshop/HTML/Gallery");
+        //    var folder     = new File("C:/Users/micha/Desktop/KEA/3. Semester/Projects/Fabian workshop/Fabian-workshop/HTML/Gallery");
         // Fluttendut
-        var folder     = new File("");
+        //var folder     = new File("");
         var serializer = new ObjectMapper().writer().withDefaultPrettyPrinter();
 
         for (var img : folder.listFiles())

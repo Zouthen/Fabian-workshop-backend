@@ -5,12 +5,11 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
-@Entity
+
 public class Order {
 
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        public String name;
+
+    public String name;
     public String email;
     public String woodType;
     public String LeatherType;
